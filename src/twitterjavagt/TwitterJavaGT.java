@@ -18,7 +18,7 @@ public class TwitterJavaGT {
             * Menú de opciones para el programa Twitter
             */
             int opcion;
-            Seguridad twitt = new Seguridad();
+           // Seguridad twitt = new Seguridad();
             do{
             opcion= Integer.parseInt(JOptionPane.showInputDialog("1) Refrescar Twitts.\n2) Publicar Estado.\n3) Mandar Mensaje. \n4) Busqueda por Hastag. \n0) Salir del Programa."));
             switch(opcion){
