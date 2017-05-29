@@ -62,19 +62,19 @@ public class Seguridad {
         }
         JOptionPane.showMessageDialog(null, mensaje);
     }
-//    /**
-//     * Poner un estado directo en tu perfil.
-//     * @param latestStatus 
-//     */
-//    public void publicarEstado(String latestStatus){
-//        List<Status> statuses=null;
-//        try {
-//            Status status = twitter.updateStatus(latestStatus);
-//            System.out.println("Actualizó correctamente el estado a [" + status.getText() + "].");
-//        } catch (TwitterException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    /**
+     * Poner un estado directo en tu perfil.
+     * @param latestStatus 
+     */
+    public void publicarEstado(String latestStatus){
+        List<Status> statuses=null;
+        try {
+            Status status = twitter.updateStatus(latestStatus);
+            System.out.println("Actualizó correctamente el estado a [" + status.getText() + "].");
+        } catch (TwitterException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 //    /**
 //     * Mandar un mensaje directo a alguien deseado a su cuenta de Twitter.
 //     * Tiene que seguirte la persona y tu seguirla a ella si queréis comunicaros
