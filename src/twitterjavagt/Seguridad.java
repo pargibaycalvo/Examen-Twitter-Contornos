@@ -88,21 +88,21 @@ public class Seguridad {
             Logger.getLogger(TwitterJavaGT.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-//    /**
-//     * Realizas una busqueda por hastag o palabras y te muestra twits relacionados
-//     * con la palabra que escribiste.
-//     * @param busqueda 
-//     */
-//    public void busquedaHastag(String busqueda){
-//        try {
-//            Query query = new Query(busqueda);
-//            QueryResult result = twitter.search(query);
-//            for (Status status : result.getTweets()) {
-//                System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
-//            }   } catch (TwitterException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    /**
+     * Realizas una busqueda por hastag o palabras y te muestra twits relacionados
+     * con la palabra que escribiste.
+     * @param busqueda 
+     */
+    public void busquedaHastag(String busqueda){
+        try {
+            Query query = new Query(busqueda);
+            QueryResult result = twitter.search(query);
+            for (Status status : result.getTweets()) {
+                System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
+            }   } catch (TwitterException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     
     
     
