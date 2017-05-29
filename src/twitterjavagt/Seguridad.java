@@ -37,31 +37,31 @@ public class Seguridad {
             TwitterFactory tf = new TwitterFactory(cb.build());
             twitter = tf.getInstance();
     }
-//    /**
-//     * Refresca tu cuenta de Twitter y te muestra lo nuevo que hay en tu perfil y lo nuevo
-//     * que pusieron tus seguidores.
-//     */
-//    public void recuperacionTimeline(){
-//        List<Status> statuses=null;
-//        String mensaje="Showing home timeline. \n";
-//        Status aux=null;
-//        try {
-//            statuses = twitter.getHomeTimeline();
-//            System.out.println("Refrescar ");
-//            for (Status status : statuses) {
-//                System.out.println(status.getUser().getName() + ":" +
-//                        status.getText());
-//            }   } catch (TwitterException ex) {
-//            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        Iterator<Status>miIterator=statuses.iterator();
-//        while(miIterator.hasNext()){
-//            aux=miIterator.next();
-//            mensaje+=aux.getUser().getName()+","+aux.getText()+"\n-\n";
-//            System.out.println(mensaje);
-//        }
-//        JOptionPane.showMessageDialog(null, mensaje);
-//    }
+    /**
+     * Refresca tu cuenta de Twitter y te muestra lo nuevo que hay en tu perfil y lo nuevo
+     * que pusieron tus seguidores.
+     */
+    public void recuperacionTimeline(){
+        List<Status> statuses=null;
+        String mensaje="Showing home timeline. \n";
+        Status aux=null;
+        try {
+            statuses = twitter.getHomeTimeline();
+            System.out.println("Refrescar ");
+            for (Status status : statuses) {
+                System.out.println(status.getUser().getName() + ":" +
+                        status.getText());
+            }   } catch (TwitterException ex) {
+            Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Iterator<Status>miIterator=statuses.iterator();
+        while(miIterator.hasNext()){
+            aux=miIterator.next();
+            mensaje+=aux.getUser().getName()+","+aux.getText()+"\n-\n";
+            System.out.println(mensaje);
+        }
+        JOptionPane.showMessageDialog(null, mensaje);
+    }
 //    /**
 //     * Poner un estado directo en tu perfil.
 //     * @param latestStatus 
