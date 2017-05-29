@@ -75,19 +75,19 @@ public class Seguridad {
             Logger.getLogger(Seguridad.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-//    /**
-//     * Mandar un mensaje directo a alguien deseado a su cuenta de Twitter.
-//     * Tiene que seguirte la persona y tu seguirla a ella si queréis comunicaros
-//     */
-//    public void mandarMensaje(String destino, String mensaje){
-//        try {
-//            DirectMessage message;
-//            message = twitter.sendDirectMessage(destino,mensaje);
-//            System.out.println("Enviado: "+ message.getText() + " para @" + message.getRecipientScreenName());
-//        } catch (TwitterException ex) {
-//            Logger.getLogger(TwitterJavaGT.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
+    /**
+     * Mandar un mensaje directo a alguien deseado a su cuenta de Twitter.
+     * Tiene que seguirte la persona y tu seguirla a ella si queréis comunicaros
+     */
+    public void mandarMensaje(String destino, String mensaje){
+        try {
+            DirectMessage message;
+            message = twitter.sendDirectMessage(destino,mensaje);
+            System.out.println("Enviado: "+ message.getText() + " para @" + message.getRecipientScreenName());
+        } catch (TwitterException ex) {
+            Logger.getLogger(TwitterJavaGT.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 //    /**
 //     * Realizas una busqueda por hastag o palabras y te muestra twits relacionados
 //     * con la palabra que escribiste.
