@@ -27,16 +27,16 @@ public class Seguridad {
      * este programa sin errores.
      * Los * representan donde tienes que introducir las claves.
      */
-    public void clave(){
-            cb = new ConfigurationBuilder();
-            cb.setDebugEnabled(true)
-                    .setOAuthConsumerKey("***")
-                    .setOAuthConsumerSecret("***")
-                    .setOAuthAccessToken("***")
-                    .setOAuthAccessTokenSecret("***");
-            TwitterFactory tf = new TwitterFactory(cb.build());
-            twitter = tf.getInstance();
-    }
+//    public void clave(){
+//            cb = new ConfigurationBuilder();
+//            cb.setDebugEnabled(true)
+//                    .setOAuthConsumerKey("***")
+//                    .setOAuthConsumerSecret("***")
+//                    .setOAuthAccessToken("***")
+//                    .setOAuthAccessTokenSecret("***");
+//            TwitterFactory tf = new TwitterFactory(cb.build());
+//            twitter = tf.getInstance();
+//    }
     /**
      * Refresca tu cuenta de Twitter y te muestra lo nuevo que hay en tu perfil y lo nuevo
      * que pusieron tus seguidores.
