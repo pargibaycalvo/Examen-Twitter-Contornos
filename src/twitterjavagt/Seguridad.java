@@ -20,7 +20,7 @@ import twitter4j.conf.ConfigurationBuilder;
  */
 public class Seguridad {
     private ConfigurationBuilder cb;
-    private Twitter twitter;
+    
     
     /**
      * Introducir claves para que se conecte a tu cuenta de Twitter y puedas utilizar 
