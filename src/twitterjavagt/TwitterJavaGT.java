@@ -23,19 +23,15 @@ public class TwitterJavaGT {
             opcion= Integer.parseInt(JOptionPane.showInputDialog("1) Refrescar Twitts.\n2) Publicar Estado.\n3) Mandar Mensaje. \n4) Busqueda por Hastag. \n0) Salir del Programa."));
             switch(opcion){
             case 1:
-                twitt.clave();
                 twitt.recuperacionTimeline();
                 break;
             case 2:
-                twitt.clave();
                 twitt.publicarEstado(JOptionPane.showInputDialog("Publica tu estado: "));
                 break;
             case 3:
-                twitt.clave();
                 twitt.mandarMensaje(JOptionPane.showInputDialog("Destinatario: "),JOptionPane.showInputDialog("Publica el comentario: "));
                 break;
             case 4:
-                twitt.clave();
                 twitt.busquedaHastag(JOptionPane.showInputDialog("Introduzca su busqueda: "));
                 break;
             case 0:
