@@ -20,7 +20,7 @@ import twitter4j.conf.ConfigurationBuilder;
  */
 public class Seguridad {
     private ConfigurationBuilder cb;
-    
+    private static Twitter twitter = TwitterFactory.getSingleton();
     
     /**
      * Introducir claves para que se conecte a tu cuenta de Twitter y puedas utilizar 
